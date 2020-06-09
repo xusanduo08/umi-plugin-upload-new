@@ -4,6 +4,7 @@
 [![NPM downloads](http://img.shields.io/npm/dm/umi-plugin-upload-new.svg?style=flat)](https://npmjs.org/package/umi-plugin-upload-new)
 
 
+适用于umi3.x，umi2.x请使用[umi-plugin-upload](https://www.npmjs.com/package/umi-plugin-upload)
 
 ## Install
 
@@ -26,6 +27,13 @@ export default {
   plugins: [
     ['umi-plugin-upload-new'],
   ],
+  upload: {
+    host: 'xxx',
+    username: 'xxx',
+    password: 'xxxx',
+    sourcePath: 'dist/',
+    targetPath: '/home/test'
+  }
 }
 ```
 
